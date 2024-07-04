@@ -44,11 +44,11 @@ void runGame(int rounds) {
 	
 	// victory message
 	if (headCount >= rounds - headCount) {
-		cout << "You won!" << endl;
+		cout << userName << " won!" << endl;
 		return;
 	}
 	
-	cout << "You lost!" << endl;
+	cout << userName << " lost!" << endl;
 }
 
 int main() {
