@@ -8,7 +8,20 @@ bool isFlippedCoinHeads() {
 	return rand() % 2;
 }
 
+string askForUserName() {
+	cout << "Who are you?" << endl;
+	
+	string name;
+	cin >> name;
+	
+	cout << "Hello, " << name << "!" << endl;
+	
+	return name;
+}
+
 void runGame(int rounds) {
+	string userName = askForUserName();
+
 	// initialised the pseudorandom sequence with the time
 	srand(time(NULL));
 
