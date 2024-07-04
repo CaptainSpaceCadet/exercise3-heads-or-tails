@@ -28,6 +28,14 @@ void runGame(int rounds) {
 	}
 	
 	cout << "Heads: " << headCount << ", Tails: " << rounds - headCount << endl;
+	
+	// victory message
+	if (headCount >= rounds - headCount) {
+		cout << "You won!" << endl;
+		return;
+	}
+	
+	cout << "You lost!" << endl;
 }
 
 int main() {
